@@ -1,0 +1,32 @@
+{
+  "name": "dsh-vibranticon",
+  "version": "1.0.0",
+  "description": "灵动图标：DSH Web UI 设置页的图标动效开关——界面图标悬停动效与思考图标持续旋转。",
+  "license": "MIT",
+  "author": "uwuAitry",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwuAitry/dsh-vibranticon.git"
+  },
+  "homepage": "https://github.com/uwuAitry/dsh-vibranticon#readme",
+  "bugs": {
+    "url": "https://github.com/uwuAitry/dsh-vibranticon/issues"
+  },
+  "keywords": ["dsh", "deepseek-harness", "plugin", "icons", "animation", "motion", "web-ui"],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-ui-settings"]
+    }
+  }
+}

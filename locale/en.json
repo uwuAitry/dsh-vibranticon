@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Living icons",
+    "description": "Adds a 'Living icons' section to Settings with switches for the hover motion of UI icons and the spinning thinking icon while a reply is reasoning. There is no icon gallery tab in the session header. Each glyph plays one short motion on hover and settles when the pointer leaves; idle icons never animate, so it costs nothing. Respects prefers-reduced-motion. Preferences are local to the browser; nothing is read from or sent to sessions."
+  }
+}
